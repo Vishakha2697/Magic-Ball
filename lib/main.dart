@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue,
         appBar: AppBar(
-          backgroundColor: Colors.teal.shade900,
+          backgroundColor: Colors.indigo,
           title: Text('Ask Me Anything'),
         ),
         body: Ball(),
@@ -29,7 +29,9 @@ class Ball extends StatefulWidget {
 class _BallState extends State<Ball> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Image(image: AssetImage('images/ball1.png')),
+    );
   }
 }
-
+  
